@@ -10,13 +10,12 @@ function Home(){
         async function loadMovies(){
             const response = await api.get('movie/popular');
             setMovies(response.data.results);
+            console.log(response.data.results);
         }
         loadMovies();
     }, [])
     return (
         <>
-            <h1>home</h1>
-            <NavBar />
             <div className="movies-container">
                 {movies.map((movie) =>
                     <MovieCard key={movie.id} movie={movie}/>
