@@ -16,6 +16,10 @@
     cursor: pointer;
 }
 
+.poster{
+    border-radius: 5px;
+}
+
 .info{
     display: flex;
     flex-direction: column;
@@ -31,23 +35,4 @@
     justify-content: center;
     font-weight: bold;
     flex: 1;
-}
-
-.info .stats{
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
-    color: rgb(197, 189, 189);
-}
-
-.stats .rating{
-    display: flex;
-}
-
-.stats .views{
-    display: flex;
-}
-
-.viewNumber{
-    display: flex;
 }
