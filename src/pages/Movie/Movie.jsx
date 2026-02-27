@@ -28,7 +28,7 @@ function Movie(){
     if (loading) return <div>Carregando...</div>;
 
     const bannerStyle = {
-        backgroundImage: `linear-gradient(to top, #1d2a35 20%, #1d2a353d), url(https://image.tmdb.org/t/p/w500/${movie.backdrop_path})`
+        backgroundImage: `linear-gradient(to top, #0c0f14d0 20%, transparent), url(https://image.tmdb.org/t/p/w500/${movie.backdrop_path})`
     }
 
     return (

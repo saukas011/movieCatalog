@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import { MdFavorite } from "react-icons/md";
 import popcorn from '../../assets/popcorn.png'
+import "../../index.css";
 import styles from './NavBar.module.css';
 
 function NavBar(){
@@ -12,8 +13,8 @@ function NavBar(){
                 <h2 className={styles.logo}>Catálogo de Filmes</h2>
             </div>
             <ul className={styles.navLinks}>
-                <li className={styles.navItems}> <Link to="/" className={styles.homeLink}><FaHome color="white" />Home</Link></li>
-                <li className={styles.navItems}> <Link to="/favorites" className={styles.favoritesLink}><MdFavorite color="#eb3939"/>Favoritos</Link></li>
+                <li className={styles.navItems}> <Link to="/" className={styles.homeLink}><FaHome className="icon" color="white" />Home</Link></li>
+                <li className={styles.navItems}> <Link to="/favorites" className={styles.favoritesLink}><MdFavorite className="icon" color="#eb3939"/>Favoritos</Link></li>
             </ul>
         </nav>
     )

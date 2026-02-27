@@ -6,7 +6,8 @@
 }
 
 body{
-    background-color: rgb(42, 36, 75);
+    background: radial-gradient(circle at center, #232d3a 30%, #0c0f14 100%);
+    background-attachment: fixed;
 }
 
 #root{
@@ -17,7 +18,7 @@ body{
 }
 
 .line{
-    background-color: rgb(83, 75, 131);
+    background-color: rgba(255, 255, 255, 0.815);
     width: 90vw;
     height: 1px;
 }
@@ -26,4 +27,15 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.icon{
+    margin-right: 5px;
 }

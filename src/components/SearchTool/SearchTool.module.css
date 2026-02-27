@@ -10,12 +10,42 @@
 }
 
 .searchInput{
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: rgba(255, 255, 255, 0.815);
     border-style: none;
     padding: 10px 10px 10px 35px;
     border-radius: 20px;
     width: 45vw;;
 }
 
-.searchInput:focus-visible {
-    outline: rgb(255, 255, 255) auto 1px;
+.searchInput:focus{
+    outline: #d5d7d9 auto 1px;
+}
+
+.suggestions{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 45vw;
+    top: 100%;
+    z-index: 10;
+    background-color: #d5d7d9;
+    outline: #d5d7d9 auto 1px;
+}
+
+.suggestionItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.suggestionItem:hover{
+    background-color: gray;
+    cursor: default;
+}
+
+.activeInput {
+    border-radius: 10px 10px 0 0;
 }
