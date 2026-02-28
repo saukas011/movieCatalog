@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import api from "../api";
 import MovieCard from "../components/MovieCard/MovieCard";
-import NavBar from "../components/NavBar/NavBar.jsx";
 import '../index.css'
 
 function Home(){

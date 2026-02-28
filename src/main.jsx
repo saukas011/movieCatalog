@@ -1,11 +1,12 @@
-import { StrictMode } from 'react'
+import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import Home from './pages/Home.jsx'
-import Movie from './pages/Movie/Movie.jsx'
-import Favorites from './pages/Favorites.jsx'
-import Search from './pages/Search.jsx'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { FavoritesProvider } from './pages/Favorites/FavoritesContext.jsx';
+import App from './App.jsx';
+import Home from './pages/Home.jsx';
+import Movie from './pages/Movie/Movie.jsx';
+import Favorites from './pages/Favorites/Favorites.jsx';
+import Search from './pages/Search.jsx';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <FavoritesProvider>
+      <RouterProvider router={router}/>
+    </FavoritesProvider>
   </StrictMode>,
 )

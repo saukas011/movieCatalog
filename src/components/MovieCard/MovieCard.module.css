@@ -1,13 +1,18 @@
 .movieCard{
     display: flex;
     flex-direction: column;
-    text-decoration: none;
     margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movieLink{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
     width: 154px; 
     min-height: 285px;
     background-color: #1d2a35;
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .movieCard:hover{
