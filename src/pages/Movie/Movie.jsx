@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import api from "../../api";
 import Stats from "../../components/Stats/Stats.jsx";
+import FavoriteBtn from "../../components/FavoriteBtn/FavoriteBtn.jsx"
 import styles from "./Movie.module.css";
 
 function Movie(){
@@ -38,7 +39,10 @@ function Movie(){
                 <img src={`https://image.tmdb.org/t/p/w154/${movie.poster_path}`} alt="poster" className={styles.poster}/>
                 <h3 className={styles.movieTitle}>{movie?.title}</h3>
                 <p className={styles.description}>{movie?.overview}</p>
-                <Stats movie={movie}/>
+                <div className={styles.statsWrapper}>
+                    <Stats movie={movie}/>
+                </div>
+            <FavoriteBtn movie={movie} className={styles.FavoriteBtn}/> 
             </div>
         </>
     );

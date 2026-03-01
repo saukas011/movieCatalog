@@ -2,14 +2,10 @@
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-    color: rgb(197, 189, 189);
+    color: #a3a3d4;
 }
 
 .stats .rating, .stats .views{
     display: flex;
 }
 
-.statsWrapper{
-    width: 154px;
-    padding: 0 3px;
-}

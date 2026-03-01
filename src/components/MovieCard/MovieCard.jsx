@@ -10,7 +10,9 @@ function MovieCard({ movie }){
                     <img src={`https://image.tmdb.org/t/p/w154/${movie.poster_path}`} alt={movie.title} className={styles.poster}/>
                     <div className={styles.info}>
                         <p className={styles.movieTitle}>{movie.title}</p>
-                        <Stats movie={movie} />
+                        <div className={styles.statsWrapper}>
+                            <Stats movie={movie} />
+                        </div>
                     </div>
             </Link>
             <FavoriteBtn movie={movie}/>

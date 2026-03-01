@@ -3,7 +3,7 @@ import { FavoritesContext } from "../../pages/Favorites/FavoritesContext.jsx";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import styles from "./FavoriteBtn.module.css"
 
-function FavoriteBtn({ movie }){
+function FavoriteBtn({ movie, className=''}){
     const { favorites, addFavorite, removeFavorite } = useContext(FavoritesContext);
     const isFavorite = favorites.some(fav => fav.id === movie.id);
 
@@ -11,7 +11,7 @@ function FavoriteBtn({ movie }){
 
 
     return(
-       <button className={styles.favoriteBtn} onClick={toggleFavorite}>{isFavorite ? <FaHeart color="#eb3939" /> : <FaRegHeart />}</button>
+       <button className={`${styles.favoriteBtn} ${className}`} onClick={toggleFavorite}>{isFavorite ? <FaHeart color="#eb3939" cursor="pointer"/> : <FaRegHeart cursor="pointer"/>}</button>
     )
 }
 

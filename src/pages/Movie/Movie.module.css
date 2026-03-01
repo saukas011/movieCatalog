@@ -27,3 +27,11 @@
 .description{
     text-align: justify;
 }
+
+.statsWrapper{
+    width: 20%;
+}
+
+.FavoriteBtn{
+    background-color: #1e203544;
+}

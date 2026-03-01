@@ -1,23 +1,21 @@
 import { FaStar } from "react-icons/fa";
-import { IoPeople } from "react-icons/io5";
+import { IoMdThumbsUp } from "react-icons/io";;
 import "../../index.css";
 import styles from "./Stats.module.css";
 
 function Stats({ movie }){
     return(
-        <div className={styles.statsWrapper}>
             <div className={styles.stats}>
                 <div className={styles.rating}>
-                    <FaStar className="icon" color="yellow"/>
+                    <FaStar className="icon" color="#D29922"/>
                     <p className="rating-value">{movie?.vote_average?.toFixed(1)}</p>
                 </div>
                 <div className={styles.views}>
-                    <IoPeople className="icon" color="rgba(108, 208, 255, 0.88)"/>
-                    <p className="viewNumber">{movie?.popularity}</p>
+                    <IoMdThumbsUp className="icon" color="#baa9c5"/>
+                    <p className="viewNumber">{movie?.vote_count}</p>
                 </div>
 
             </div>
-        </div>
     )
 }
 
