@@ -17,8 +17,10 @@ Aplicação web para buscar, visualizar e salvar filmes
 git clone https://github.com/saukas011/movieCatalog.git
 npm install
 ```
-2. Execute o seguinte comando
-`npm run dev`
+2. Execute o seguinte comando para iniciar o servidor local
+```bash
+npm run dev
+```
 
 3. Em seguida, copie o link que será disponibilizado no terminal e cole em seu navegador de preferência
 
