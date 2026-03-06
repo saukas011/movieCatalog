@@ -25,9 +25,11 @@ npm run dev
 3. Em seguida, copie o link que será disponibilizado no terminal e cole em seu navegador de preferência
 
 4. Para deixar de rodar: Ctrl + C
-# React + Vite
 
 Documentação do próprio React abaixo:
+
+# React + Vite
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
