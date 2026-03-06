@@ -7,9 +7,13 @@ function Home(){
     const [movies, setMovies] = useState([]);
     useEffect(() => {
         async function loadMovies(){
-            const response = await api.get('movie/popular');
-            setMovies(response.data.results);
-            console.log(response.data.results);
+            try{
+                const response = await api.get('movie/popular');
+                setMovies(response.data.results);
+                console.log(response.data.results);
+            }catch(err){
+                console.error(err)
+            }
         }
         loadMovies();
     }, [])

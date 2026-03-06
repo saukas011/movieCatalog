@@ -11,7 +11,7 @@ function FavoriteBtn({ movie, className=''}){
 
 
     return(
-       <button className={`${styles.favoriteBtn} ${className}`} onClick={toggleFavorite}>{isFavorite ? <FaHeart color="#eb3939" cursor="pointer"/> : <FaRegHeart cursor="pointer"/>}</button>
+       <button className={`${styles.favoriteBtn} ${className}`} onClick={toggleFavorite}>{isFavorite ? <FaHeart color="#eb3939" cursor="pointer" size="15px"/> : <FaRegHeart cursor="pointer" color="#ffffff7a"/>}</button>
     )
 }
 

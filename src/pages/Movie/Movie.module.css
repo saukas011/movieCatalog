@@ -2,36 +2,80 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    width: 80%;
-    min-width: 550px;
-    padding: 40px 40px 80px 40px;
-    margin-bottom: 40px;
+    text-align: justify;
+    padding: 20px;
+    color: white;
     background: linear-gradient(to bottom, #0c0f146e 90%, transparent);
-    color: #dddddd;
 }
 
 .banner{
     background-size: cover;
     background-position: center;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 100%;
+    min-height: 50px;
     aspect-ratio: 4 / 1;
 }
 
 .poster{
-    margin-top: -115px;
     border-radius: 10px;
+    width: 100px;
+    transform: translateY(-25%);
 }
 
 .description{
-    text-align: justify;
+    padding: 10px 0;
 }
 
 .statsWrapper{
-    width: 20%;
+    width: 50%;
+    padding: 10px 0;
 }
 
-.FavoriteBtn{
-    background-color: #1e203544;
+.FavoriteBtnWrapper{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+@media(min-width: 460px){
+    .poster{
+        width: 154px;
+    }
+}
+
+@media(min-width: 460px) and (max-width: 1000px){
+    .statsWrapper, .FavoriteBtnWrapper{
+        width: 30%;
+    }
+}
+
+@media(min-width: 700px){
+    .banner{
+        width: 70%;
+    }
+
+    .movieTitle{
+        transform: translateY(-300%);
+    }
+
+    .poster, .description, .statsWrapper, .FavoriteBtnWrapper{
+        transform: translateY(-45%);
+    }
+}
+
+@media(min-width: 700px) and (max-width: 1000px){
+    .description{
+        padding: 0 100px;
+    }
+}
+
+@media(min-width: 1000px){
+    .description{
+        padding: 0 200px;
+    }
+
+    .statsWrapper, .FavoriteBtnWrapper{
+        width: 20%;
+    }
 }

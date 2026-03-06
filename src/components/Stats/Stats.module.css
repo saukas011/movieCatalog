@@ -1,11 +1,17 @@
 .stats{
     display: flex;
     justify-content: space-between;
-    margin-top: auto;
+    align-items: center;
     color: #a3a3d4;
+    font-size: 12px;
 }
 
-.stats .rating, .stats .views{
+.stats .rating, .stats .votes{
     display: flex;
 }
 
+@media(min-width: 460px){
+    .stats{
+        font-size: 14px;
+    }
+}

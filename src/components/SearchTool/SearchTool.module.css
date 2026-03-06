@@ -1,4 +1,4 @@
-.searchWrapper{
+.searchToolWrapper{
     display: flex;
     align-items: center;
     position: relative;
@@ -6,46 +6,50 @@
 
 .searchIcon{
     position: absolute;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .searchInput{
-    appearance: none;
+    display: flex;
     -webkit-appearance: none;
-    background-color: rgba(255, 255, 255, 0.815);
     border-style: none;
-    padding: 10px 10px 10px 35px;
     border-radius: 20px;
-    width: 45vw;;
+    width: 80vw;
+    padding: 7px 30px;
+    background-color: #ffffffd0;
 }
 
 .searchInput:focus{
-    outline: #d5d7d9 auto 1px;
+    outline: #ffffffd0 solid 1px;
+}
+
+.activeInput{
+    border-radius: 15px 15px 0 0;
 }
 
 .suggestions{
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 45vw;
     top: 100%;
-    z-index: 10;
-    background-color: #d5d7d9;
-    outline: #d5d7d9 auto 1px;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    background-color: #d3d3d5;
+    outline: #ffffffd0 solid 1px;
 }
 
 .suggestionItem{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
+    padding: 5px;
 }
 
 .suggestionItem:hover{
-    background-color: gray;
-    cursor: default;
+    cursor: pointer;
+    background-color: rgba(165, 164, 164, 0.692);
 }
 
-.activeInput {
-    border-radius: 10px 10px 0 0;
+@media(min-width: 1000px){
+    .searchInput{
+        width: 50vw;
+        padding: 10px 30px;
+    }
 }

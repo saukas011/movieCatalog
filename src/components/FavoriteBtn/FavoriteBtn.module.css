@@ -1,8 +1,10 @@
 .favoriteBtn{
-    border-style: solid none none;
-    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-style: solid none none none;
     border-width: 2px;
-    padding: 5px 0 3px;
     border-color: #2e3150;
     background-color: #1E2035;
 }

@@ -1,0 +1,32 @@
+.navLinks{
+    display: flex;
+    list-style: none;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+}
+
+.navItems{
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+}
+
+.homeLink, .favoritesLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.5s;
+    width: 100%;
+    padding: 0 5px;
+}
+
+.homeLink:hover, .favoritesLink:hover{
+    background-color: #34414d;
+}
+

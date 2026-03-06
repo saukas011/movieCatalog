@@ -42,7 +42,9 @@ function Movie(){
                 <div className={styles.statsWrapper}>
                     <Stats movie={movie}/>
                 </div>
-            <FavoriteBtn movie={movie} className={styles.FavoriteBtn}/> 
+                <div className={styles.FavoriteBtnWrapper}>
+                    <FavoriteBtn movie={movie} /> 
+                </div>
             </div>
         </>
     );

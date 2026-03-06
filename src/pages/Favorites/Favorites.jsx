@@ -8,7 +8,7 @@ function Favorites(){
 
     return (
         
-        <>
+        <div style={{ display: "flex"}}>
             <div className="favorites-container">
                 <h1>favoritos</h1>
                 <div className="movies-container">
@@ -17,7 +17,7 @@ function Favorites(){
                         ))}
                 </div>
             </div>
-        </>
+        </div>
     );
 
 }

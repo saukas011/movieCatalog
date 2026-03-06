@@ -15,7 +15,9 @@ function MovieCard({ movie }){
                         </div>
                     </div>
             </Link>
-            <FavoriteBtn movie={movie}/>
+            <div className={styles.FavoriteBtnWrapper}>
+                <FavoriteBtn movie={movie}/>
+            </div>
         </div>
     );
 }

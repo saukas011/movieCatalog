@@ -8,10 +8,10 @@ function Stats({ movie }){
             <div className={styles.stats}>
                 <div className={styles.rating}>
                     <FaStar className="icon" color="#D29922"/>
-                    <p className="rating-value">{movie?.vote_average?.toFixed(1)}</p>
+                    <p className={styles.ratingValue}>{movie?.vote_average?.toFixed(1)}</p>
                 </div>
-                <div className={styles.views}>
-                    <IoMdThumbsUp className="icon" color="#baa9c5"/>
+                <div className={styles.votes}>
+                    <IoMdThumbsUp className="icon" color="#ffffff"/>
                     <p className="viewNumber">{movie?.vote_count}</p>
                 </div>
 

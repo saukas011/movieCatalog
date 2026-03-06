@@ -45,9 +45,9 @@ function SearchTool(){
     }, [query]);
 
     return(
-        <div className={styles.searchWrapper} ref={searchRef}>
-            <MdSearch className={styles.searchIcon}/>
-            <form onSubmit={handleSearch}>
+        <div className={styles.searchToolWrapper} ref={searchRef}>
+            <MdSearch className={styles.searchIcon} size="20px"/>
+            <form onSubmit={handleSearch} >
                 <input type="text" placeholder="pesquisar" id="searchTool" autoComplete="off" className={`${styles.searchInput}  ${hasSuggestions ? styles.activeInput : ''}`} value={query} onChange={(e) => setQuery(e.target.value)}/>
             </form>
 
@@ -55,7 +55,7 @@ function SearchTool(){
                 <div className={styles.suggestions}>
                     {suggestions.map((movie) => (
                         <div key={movie.id} className={styles.suggestionItem} onClick={() => {navigate(`/movie/${movie.id}`); setQuery(""); setSuggestions([]);}}>
-                            <span>{movie.title}</span>
+                            <MdSearch /> <span>{movie.title}</span>
                         </div>
                     ))}
                 </div>
