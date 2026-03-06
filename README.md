@@ -1,4 +1,31 @@
+# Catálogo de Filmes
+Aplicação web para buscar, visualizar e salvar filmes
+## Tecnologias
+- React
+- React Router DOM
+- API da The Movie DataBase (TMDB)
+## Funcionalidades
+- Listagem de filmes
+- Buscar filmes por Título
+- Salvar nos favoritos
+## Como Rodar Localmente
+### Requisitos:
+- Node.js
+### Passo a Passo:
+1. Clone o repositório e instale as dependências
+```bash
+git clone https://github.com/saukas011/movieCatalog.git
+npm install
+```
+2. Execute o seguinte comando
+`npm run dev`
+
+3. Em seguida, copie o link que será disponibilizado no terminal e cole em seu navegador de preferência
+
+4. Para deixar de rodar: Ctrl + C
 # React + Vite
+
+Documentação do próprio React abaixo:
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
